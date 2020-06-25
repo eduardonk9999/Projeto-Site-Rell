@@ -7,7 +7,7 @@ const server = express();
 server.use(express.static('public'));
 
 //Nunjucks
-server.set("view engine", "html");
+server.set("view engine", "njk");
 nunjucks.configure("views", {
     //aqui digo que vou usar o express e a variavel server.
     express:server
